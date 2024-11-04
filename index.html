@@ -16,24 +16,25 @@
         console.log(parent);
 
         try {
-            
+
             parent.aaa = 1
         } catch (error) {
             console.log(error);
-            
-        }        
+
+        }
 
         try {
             parent.window.localStorage.setItem('xxxx', 'xxxx')
         } catch (error) {
             console.log(error);
-            
+
         }
 
         try {
             parent.window.document.querySelector('title').innerText = 'xxxxxxx'
         } catch (error) {
-            
+            console.log(error);
+
         }
 
         parent.window.fetch("https://iwiki.woa.com/tencent/api/comment", {
