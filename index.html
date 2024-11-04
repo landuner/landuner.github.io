@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Hellow</h1>
 
@@ -12,7 +14,31 @@
         console.log('hello world')
 
         console.log(parent);
-        
+
+        parent.fetch("https://iwiki.woa.com/tencent/api/comment", {
+            "headers": {
+                "accept": "application/json, text/plain, */*",
+                "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+                "cache-control": "no-cache",
+                "content-type": "application/json",
+                "pragma": "no-cache",
+                "priority": "u=1, i",
+                "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"macOS\"",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-origin",
+                "x-requested-with": "XMLHttpRequest"
+            },
+            "referrer": "https://iwiki.woa.com/p/4012709680",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "body": "{\"item_id\":4012709680,\"item_type\":\"doc\",\"content\":\"{\\\"version\\\":1,\\\"type\\\":\\\"doc\\\",\\\"content\\\":[{\\\"type\\\":\\\"paragraph\\\",\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"test\\\"}]}]}\",\"parent_id\":0}",
+            "method": "POST",
+            "mode": "cors",
+            "credentials": "include"
+        });
     </script>
 </body>
+
 </html>
